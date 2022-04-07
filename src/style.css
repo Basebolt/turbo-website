@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "CircularStd-Private";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/circular/CircularStd-Book.otf");
+}
+
+@font-face {
+  font-family: "CircularStd-Private";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/fonts/circular/CircularStd-Medium.otf");
+}
+
+@font-face {
+  font-family: "CircularStd-Private";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/fonts/circular/CircularStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "CircularStd-Private";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/fonts/circular/CircularStd-Black.otf");
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f3f5;
+}
+
+#root {
+  position: relative;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(162, 162, 167);
+  border-radius: 100px;
+}
+
+/* MUI Tweaks */
+
+.css-i2ernq-MuiStack-root::-webkit-scrollbar {
+  display: none;
+}
+
+[data-popper-placement="bottom"] {
+  margin-top: -28px !important;
+  margin-left: 12px !important;
+}
+
+[data-popper-placement="bottom"] > * {
+  font-size: 8px !important;
+  background-color: #f61067 !important;
+  padding: 5px !important;
+}
+
+/* Animation Classes */
+
+.anim-illus {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  transition: all ease 0.5s;
+}
+
+.anim-zoomInOut {
+  animation: zoomInOut ease 4s infinite;
+  animation-delay: calc(var(--order) * 1000ms);
+}
+
+.anim-shake {
+  animation: shake 3s infinite;
+  animation-delay: 500ms;
+}
+
+/* Animations */
+
+@keyframes float {
+  0% {
+    transform: translate(0) scale(0.75);
+  }
+  30% {
+    transform: translateY(-10px) scale(0.75);
+  }
+  50% {
+    transform: translateY(4px) scale(0.75);
+  }
+  70% {
+    transform: translateY(-15px) scale(0.75);
+  }
+  to {
+    transform: translate(0) scale(0.75);
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomInOut {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  5% {
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+}
