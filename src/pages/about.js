@@ -5,6 +5,7 @@ import { StatSection } from "../sections/StatSection";
 
 export const About = () => {
   const b1 = useMediaQuery("(max-width:600px)");
+  const b2 = useMediaQuery("(max-width:1040px)");
   return (
     <>
       <Stack width={b1 ? "90%" : "75%"} m="auto" my={6}>
@@ -41,7 +42,7 @@ export const About = () => {
             container
             my={8}
             spacing={2}
-            direction={b1 ? "column" : "row"}
+            direction={b1 || b2 ? "column" : "row"}
           >
             <Grid item xs={6}>
               <Typography
@@ -55,7 +56,7 @@ export const About = () => {
               <Typography
                 variant="body1"
                 color="grey.main"
-                sx={{ width: b1 ? "100%" : "90%", float: "right" }}
+                sx={{ width: b1 || b2 ? "100%" : "90%", float: "right" }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis

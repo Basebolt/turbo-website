@@ -15,7 +15,7 @@ export const DLSection = ({ b1 }) => {
       >
         <Grid item md={6} lg={6}>
           <Stack spacing={1} sx={{ textAlign: b1 ? "center" : "left" }}>
-            <Typography variant="h3" sx={{ fontWeight: 500 }}>
+            <Typography variant={b1 ? "h4" : "h3"} sx={{ fontWeight: 500 }}>
               Get started now
             </Typography>
             <Typography variant="body1" color="grey.main">
@@ -29,7 +29,10 @@ export const DLSection = ({ b1 }) => {
               variant="contained"
               color="primary"
               endIcon={<ArrowRightAlt />}
-              sx={{ height: "64px !important", width: "184px" }}
+              sx={{
+                height: `${b1 ? "56px" : "64px"} !important`,
+                width:  `${b1 ? "164px" : "184px"} !important`,
+              }}
             >
               Download
             </Button>

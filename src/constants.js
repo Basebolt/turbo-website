@@ -21,6 +21,7 @@ export const EMOJIES = [
 export const QUICK_STATS = [
   {
     stat: 2,
+    postfix: "",
     plus: false,
     load: true,
     sep: false,
@@ -28,13 +29,15 @@ export const QUICK_STATS = [
   },
   {
     stat: 2019,
+    postfix: "",
     plus: false,
     load: false,
     sep: false,
     desc: "First release",
   },
   {
-    stat: 1350,
+    stat: 2,
+    postfix: "K",
     plus: true,
     load: true,
     sep: true,
@@ -42,6 +45,7 @@ export const QUICK_STATS = [
   },
   {
     stat: 40,
+    postfix: "",
     plus: true,
     load: true,
     sep: true,
