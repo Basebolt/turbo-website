@@ -3,7 +3,7 @@ import { Sublink } from "./SubLink";
 
 export const SubMenu = ({ currNavItem, elem }) => {
   return (
-    currNavItem && (
+    currNavItem === elem && (
       <Stack
         spacing={3}
         p={3}

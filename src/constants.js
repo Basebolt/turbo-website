@@ -18,6 +18,37 @@ export const EMOJIES = [
   { icon: "/images/emojies/astonished.png", alt: "" },
 ];
 
+export const QUICK_STATS = [
+  {
+    stat: 2,
+    plus: false,
+    load: true,
+    sep: false,
+    desc: "College Devs",
+  },
+  {
+    stat: 2019,
+    plus: false,
+    load: false,
+    sep: false,
+    desc: "First release",
+  },
+  {
+    stat: 1350,
+    plus: true,
+    load: true,
+    sep: true,
+    desc: "Downloads",
+  },
+  {
+    stat: 40,
+    plus: true,
+    load: true,
+    sep: true,
+    desc: "New Features",
+  },
+];
+
 export const SOCIAL_LINKS = [
   {
     platform: "instagram",

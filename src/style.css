@@ -76,6 +76,10 @@ body {
   padding: 5px !important;
 }
 
+[role="tooltip"] {
+  z-index: 1 !important;
+}
+
 /* Animation Classes */
 
 .anim-illus {

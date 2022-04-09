@@ -24,7 +24,7 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <Premium />
-      <Footer currDownloadLink={currDownloadLink} />
+      <Footer currDownloadLink={currDownloadLink} withDLSection={true} />
     </>
   );
 }
