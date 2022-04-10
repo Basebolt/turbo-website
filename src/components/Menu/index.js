@@ -9,16 +9,16 @@ export const Menu = ({ setIsMenuVisible }) => {
   return (
     b1 && (
       <>
-        <Divider />
         <Box
           sx={{
             position: "fixed",
-            top: 82,
+            top: 80,
             background: "#f2f3f5",
             left: 0,
             bottom: 0,
             right: 0,
             zIndex: 99,
+            borderTop: "1px solid #ddd",
             animation: "pop ease 0.3s",
           }}
         >
