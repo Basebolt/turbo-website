@@ -32,7 +32,11 @@ export const StatSection = ({ b1 }) => {
               sx={{ fontFamily: "audiowide" }}
             >
               {load ? (
-                <CountUp end={stat} separator={sep && ","}>
+                <CountUp
+                  start={stat - (stat / 100) * 50}
+                  end={stat}
+                  separator={sep && ","}
+                >
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                       <span ref={countUpRef} />
