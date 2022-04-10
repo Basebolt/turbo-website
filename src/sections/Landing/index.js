@@ -41,7 +41,7 @@ export const Landing = ({ currDownloadLink, ExtensionAvailability }) => {
         {b3 && (
           <Grid item lg={6} md={6} sx={{ position: "relative" }}>
             <Box sx={{ pt: 4, pb: 6 }}>
-              <div data-aos="fade-up" data-aos-delay="2000">
+              <div data-aos="zoom-in" data-aos-delay="1800">
                 <ScreenComponent />
               </div>
             </Box>

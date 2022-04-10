@@ -42,7 +42,7 @@ export const ProductFeatures = ({ productFeatures, setCurrFeature, b2 }) => {
                     {desc}
                   </Typography>
                   {b2 && (
-                    <div data-aos={"zoom-in"} data-aos-delay="500">
+                    <div data-aos={"zoom-in"} data-aos-delay="100">
                       <Stack
                         sx={{
                           width: "100%",
