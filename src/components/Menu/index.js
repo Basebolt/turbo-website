@@ -1,4 +1,4 @@
-import { Box, Divider, Stack, useMediaQuery } from "@mui/material";
+import { Box, Stack, useMediaQuery } from "@mui/material";
 import { useState } from "react";
 import { NAVBAR_LINKS } from "../../constants";
 import { MenuLink } from "./MenuLink";
