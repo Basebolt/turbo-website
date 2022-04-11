@@ -1,8 +1,33 @@
 import {
+  ChatBubbleOutlined,
+  ClosedCaptionOutlined,
+  CompressOutlined,
+  CopyAllOutlined,
+  DarkModeOutlined,
+  DoNotDisturbOutlined,
+  FullscreenOutlined,
+  GroupOutlined,
+  HomeOutlined,
+  InboxOutlined,
+  LoginOutlined,
+  LogoutOutlined,
+  ManageAccountsOutlined,
+  MicOffOutlined,
   PaletteOutlined,
+  PersonAddOutlined,
+  PersonRemoveOutlined,
   PictureInPictureAlt,
+  PresentToAllOutlined,
+  PushPinOutlined,
   RadioButtonChecked,
+  SentimentSatisfied,
+  StarOutlineOutlined,
+  TimerOutlined,
+  VideocamOffOutlined,
+  VisibilityOffOutlined,
   VolumeOffOutlined,
+  WarningAmberOutlined,
+  WifiOffOutlined,
 } from "@mui/icons-material";
 
 import {
@@ -17,6 +42,208 @@ export const EMOJIES = [
   { icon: "/images/emojies/smiling-heart-eyes.png", alt: "" },
   { icon: "/images/emojies/astonished.png", alt: "" },
 ];
+
+export const FEATURES = {
+  free: {
+    hotkeys: [
+      {
+        name: "Push to talk",
+        desc: "Hold down hotkey to speak",
+        icon: <CompressOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Quick Leave",
+        desc: "Click hotkey to leave meeting",
+        icon: <LogoutOutlined />,
+        newRelease: true,
+      },
+    ],
+    tools: [
+      {
+        name: "Chat logs",
+        desc: "Collect meeting chats for download",
+        icon: <InboxOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Attendance",
+        desc: "Collect attendance for download",
+        icon: <GroupOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Student points",
+        desc: "Award students points easily",
+        icon: <StarOutlineOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Meeting Timer",
+        desc: "Display meeting timer",
+        icon: <TimerOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Quick Emoji Reactions",
+        desc: "Add emoji selector to chatbox",
+        icon: <SentimentSatisfied />,
+        newRelease: true,
+      },
+    ],
+    presets: [
+      {
+        name: "Auto Join",
+        desc: "Join meetings on page load",
+        icon: <LoginOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Present",
+        desc: "Directly enter presenting mode",
+        icon: <PresentToAllOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Fullscreen",
+        desc: "Enable fullscreen on joining",
+        icon: <FullscreenOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Captions",
+        desc: "Enable captions in meetings",
+        icon: <ClosedCaptionOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Mute Mic",
+        desc: "Mute mic before joining",
+        icon: <MicOffOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Video Off",
+        desc: "Turn off video before joining",
+        icon: <VideocamOffOutlined />,
+        newRelease: true,
+      },
+
+      {
+        name: "Auto Admit",
+        desc: "Automatically accept newRelease entrants",
+        icon: <PersonAddOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Deny",
+        desc: "Deny newRelease entrants automatically",
+        icon: <PersonRemoveOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Copy URL",
+        desc: "Copy newRelease meeting URL automatically",
+        icon: <CopyAllOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Pin Chatbox",
+        desc: "Enable dark theme for google meet",
+        icon: <PushPinOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Auto Hide Popup",
+        desc: "Hide all popups automatically",
+        icon: <VisibilityOffOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Set Default Account",
+        desc: "Default account for all meetings",
+        icon: <ManageAccountsOutlined />,
+        newRelease: true,
+      },
+    ],
+    accessibility: [
+      {
+        name: "Leave Confirmation",
+        desc: "Prompt with leave confirmation popup",
+        icon: <WarningAmberOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Return to Homescreen",
+        desc: "Go back to homescreen on ending calls",
+        icon: <HomeOutlined />,
+        newRelease: true,
+      },
+      {
+        name: "Do Not Disturb (DND)",
+        desc: "Hide newRelease chatbox/join notifications",
+        icon: <DoNotDisturbOutlined />,
+        newRelease: true,
+      },
+    ],
+    notifications: [
+      {
+        name: "Messages",
+        desc: "Enable chatbox notifications",
+        icon: <ChatBubbleOutlined />,
+        newRelease: false,
+      },
+      {
+        name: "Connection Alerts",
+        desc: "Notify me when connection is lost",
+        icon: <WifiOffOutlined />,
+      },
+    ],
+    appearance: [
+      {
+        name: "Dark mode",
+        desc: "Enable dark theme for google meet",
+        icon: <DarkModeOutlined />,
+      },
+    ],
+  },
+  premium: {
+    tools: [
+      {
+        name: "Mute All",
+        desc: "Keep all participants in the meeting muted, for an uninterupted meeting experience",
+        icon: <VolumeOffOutlined />,
+        color: "#F59E0B",
+        newRelease: true,
+      },
+    ],
+    appearance: [
+      {
+        name: "Picture in Picture",
+        desc: "Watch your meeting videos above other apps for seamless multitasking.",
+        icon: <PictureInPictureAlt />,
+        color: "#2cbbce",
+        newRelease: true,
+      },
+      {
+        name: "Custom Themes",
+        desc: "Personalize how Google Meet looks with fun custom themes. Make it yours xD",
+        icon: <PaletteOutlined />,
+        color: "#C78ADC",
+        newRelease: true,
+      },
+    ],
+    presets: [
+      {
+        name: "Auto Record",
+        desc: "Automatically Record meetings as soon as they have begun",
+        icon: <RadioButtonChecked />,
+        color: "#f61067",
+        newRelease: true,
+      },
+    ],
+  },
+};
 
 export const QUICK_STATS = [
   {
@@ -120,7 +347,7 @@ export const ExtensionAvailability = {
 export const PRODUCT_FEATURES = [
   {
     title: `Interact with your audience, better`,
-    desc: `Tired of the one-way conversation with your audience? We provide a new way to interact &
+    desc: `Tired of the one-way conversation with your audience? We provide a newRelease way to interact &
     make your meetings fun and intutive`,
     illus: "/images/illus/illus1",
     illusMobile: "/images/illusMobile/illus1",
@@ -186,35 +413,7 @@ export const NAVBAR_LINKS = [
     ],
   },
   "about",
-  "roadmap",
-];
-
-export const PREMIUM_FEATURES = [
-  {
-    title: "Mute All",
-    desc: "Keep all participants in the meeting muted, for an uninterupted meeting experience",
-    icon: <VolumeOffOutlined />,
-    color: "#F59E0B",
-  },
-
-  {
-    title: "Picture in Picture",
-    desc: "Watch your meeting videos above other apps for seamless multitasking.",
-    icon: <PictureInPictureAlt />,
-    color: "#2cbbce",
-  },
-  {
-    title: "Custom Themes",
-    desc: "Personalize how Google Meet looks with fun custom themes. Make it yours xD",
-    icon: <PaletteOutlined />,
-    color: "#C78ADC",
-  },
-  {
-    title: "Auto Record",
-    desc: "Automatically Record meetings as soon as they have begun",
-    icon: <RadioButtonChecked />,
-    color: "#f61067",
-  },
+  "privacy-policy",
 ];
 
 export const FOOTER_LINKS = {
