@@ -3,7 +3,7 @@ import { ThemeProvider } from "@mui/material";
 import "./style.css";
 import Home from "./pages/home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Roadmap } from "./pages/roadmap";
+import { PrivacyPolicy } from "./pages/privacy-policy";
 import { About } from "./pages/about";
 import Layout from "./pages/layout";
 import { WhatsNew } from "./pages/what's-new";
@@ -27,7 +27,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="what's-new" element={<WhatsNew />} />
             <Route path="about" element={<About />} />
-            <Route path="roadmap" element={<Roadmap />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
           </Route>
         </Routes>
       </BrowserRouter>

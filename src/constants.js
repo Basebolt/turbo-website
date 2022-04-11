@@ -43,6 +43,31 @@ export const EMOJIES = [
   { icon: "/images/emojies/astonished.png", alt: "" },
 ];
 
+export const PRIVACY_POLICY = [
+  {
+    title: "Information you provide the extension when you log in",
+    desc: "Our extension may access some of your personal data to function, this includes but is not limited to your email address and your public profile picture",
+  },
+  {
+    title: "Chats/Attendance storage",
+    desc: `Your meeting chats/attendance are stored locally on your browser, so that you can download them whenever required
+    or upload them to Google Drive™`,
+  },
+  {
+    title: "Drive uploads",
+    desc: `‍The user voluntarily gives us permission to store text/xlxs files containing your meeting chats/attendance in the root directory of your Google Drive™ account.
+    ‍`,
+  },
+  {
+    title: "Chrome Permissions",
+    desc: "Notifications: Allows us to send meeting chats as system notifications",
+  },
+  {
+    title: "Google Analytics",
+    desc: `We have implemented Google Analytics™ within our extension. This sends usage data (button clicks, etc.) to us anonymously so that we can know how users generally use the extension. This allows us to decide what feature improvements to prioritize on and how to improve the user experience. If you would not like to send such anonymous tracking data, you may turn off the 'Usage Reports' switch.`,
+  },
+];
+
 export const FEATURES = {
   free: {
     hotkeys: [
