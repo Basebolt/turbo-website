@@ -93,6 +93,7 @@ export const ContactUs = () => {
                 sx={{ width: "100%" }}
                 label="Email"
                 name="email"
+                type="email"
                 variant="outlined"
               />
               <TextField
@@ -104,6 +105,7 @@ export const ContactUs = () => {
                 multiline
               />
               <Button
+                type="submit"
                 variant="contained"
                 sx={{ height: "56px !important", width: "100%" }}
               >
