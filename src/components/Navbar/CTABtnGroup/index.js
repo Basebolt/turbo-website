@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../Button";
 
 export const CTABtnGroup = () => {
@@ -7,9 +8,11 @@ export const CTABtnGroup = () => {
   };
   return (
     <>
-      <Button variant="outlined" {...styleProps}>
-        Contact Us
-      </Button>
+      <Link to="/contact-us" style={{ textDecoration: "none" }}>
+        <Button variant="outlined" {...styleProps}>
+          Contact Us
+        </Button>
+      </Link>
       <Button variant="contained" {...styleProps}>
         Get Premium
       </Button>

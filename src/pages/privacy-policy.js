@@ -43,6 +43,7 @@ export const PrivacyPolicy = () => {
               </Typography>
             </div>
           </Stack>
+          
           <Stack>
             <Typography
               variant="h6"

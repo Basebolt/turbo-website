@@ -10,6 +10,7 @@ import { WhatsNew } from "./pages/what's-new";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { theme } from "./theme";
+import { ContactUs } from "./pages/contact-us";
 
 export default function App() {
   React.useEffect(() => {
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="what's-new" element={<WhatsNew />} />
             <Route path="about" element={<About />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="contact-us" element={<ContactUs />} />
           </Route>
         </Routes>
       </BrowserRouter>
