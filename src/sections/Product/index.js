@@ -13,7 +13,7 @@ export const Product = () => {
 
   return (
     <Stack alignItems="center" sx={{ background: "#f8f6f0" }}>
-      <Box sx={{ width: "90%" }} maxWidth={1270}>
+      <Box sx={{ width: "90%" }} maxWidth={1375}>
         <Grid container rowSpacing={{ xs: 8 }}>
           {!b1 && (
             <Grid item lg={1}>

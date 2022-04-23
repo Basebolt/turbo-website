@@ -471,7 +471,7 @@ export const FOOTER_LINKS = {
   help: [
     { item: "Github Issues", url: "https://github.com/" },
     { item: "Google Form", url: "https://forms.gle/wx8bTNh2W4p2Hevs9" },
-    { item: "FAQ", path: "/product/" },
+    { item: "Contact Us", path: "/" },
   ],
   community: [
     { item: "Discord", url: "https://discord.com/" },

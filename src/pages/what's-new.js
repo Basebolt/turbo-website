@@ -9,8 +9,15 @@ export const WhatsNew = () => {
   const b2 = useMediaQuery("(max-width:1040px)");
   return (
     <Stack>
-      <Grid container width={b1 ? "90%" : "75%"} m="auto" my={6}>
-        <Grid item xs={8} width={b1 ? "100%" : "75%"}>
+      <Grid
+        container
+        width={b1 ? "90%" : "75%"}
+        m="auto"
+        my={6}
+        direction={b2 ? "column" : "row"}
+        flexWrap="nowrap"
+      >
+        <Grid item xs={8} width={b2 ? "100%" : "75%"} >
           <Stack spacing={2}>
             <div data-aos="fade-up" data-aos-delay="400">
               <Typography

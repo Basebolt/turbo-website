@@ -47,7 +47,7 @@ export const ContactUs = () => {
               }}
             >
               We’re here to help. Ask us about the product,
-              <br /> our services, and any questions you have.
+              <br /> our services, or any questions you have.
             </Typography>
           </Stack>
         </Grid>

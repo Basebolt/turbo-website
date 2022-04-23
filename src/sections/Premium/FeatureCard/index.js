@@ -10,7 +10,7 @@ export const FeatureCard = ({
   color,
 }) => {
   return (
-    <Box>
+    <Box sx={{ position: "relative" }}>
       <Stack
         alignItems="center"
         justifyContent="center"
