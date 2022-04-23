@@ -52,7 +52,7 @@ export const ContactUs = () => {
           </Stack>
         </Grid>
         <Grid item lg={7} width="100%">
-          <form name="contact" action="POST" data-netlify="true">
+          <form name="contact" method="POST" action="/" data-netlify="true">
             <Stack
               p={6}
               spacing={4}
