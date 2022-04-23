@@ -25,7 +25,6 @@ export const TurboUIComponents = ({ b1 }) => {
       justifyContent="center"
       sx={{
         position: "relative",
-        height: "calc(100vh - 80px)",
         width: "100%",
         transform: b1 ? "scale(0.8)" : "scale(0.9)",
         transition: "all ease 0.5s",
