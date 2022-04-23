@@ -17,9 +17,9 @@ export const Landing = ({ currDownloadLink, ExtensionAvailability }) => {
         container
         justifyContent="center"
         alignItems="center"
+        maxWidth={1270} m="auto"
         sx={{
           width: `${b1 ? "90%" : "75%"}`,
-          m: "auto",
           height: "100%",
         }}
       >

@@ -20,6 +20,7 @@ export const Premium = () => {
         alignItems="start"
         p={b2 ? 2 : 8}
         pt={b2 ? 6 : "auto"}
+        maxWidth={1270} m="auto"
         sx={{
           background: "#314C5C",
           borderRadius: 4,

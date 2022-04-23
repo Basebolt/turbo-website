@@ -24,7 +24,7 @@ export const Testimonials = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Stack spacing={6} width={b1 ? "90%" : "75%"}>
+      <Stack spacing={6} width={b1 ? "90%" : "75%"} maxWidth={1270} m="auto">
         <Stack
           direction="row"
           justifyContent="space-between"

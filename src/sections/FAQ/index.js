@@ -29,6 +29,7 @@ export const FAQ = () => {
         alignItems="center"
         justifyContent={matches ? "start" : "center"}
         width={b1 ? "100%" : "75%"}
+        maxWidth={1270} m="auto"
       >
         <Grid item lg={7} width="100%">
           <Stack spacing={4} pb={4} width={b1 ? "90%" : "100%"} m="auto">

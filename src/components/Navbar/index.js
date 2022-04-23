@@ -29,7 +29,7 @@ export const Navbar = ({ isMenuVisible, setIsMenuVisible }) => {
         boxShadow: "rgb(0 0 0 / 0%) 0px 30px 60px -10px",
       }}
     >
-      <Box sx={{ width: "90%", margin: "auto" }}>
+      <Box sx={{ width: "90%" }} maxWidth={1270} m="auto">
         <Stack
           justifyContent="space-between"
           alignItems="center"

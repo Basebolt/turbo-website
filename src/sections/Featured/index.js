@@ -17,6 +17,7 @@ export const Featured = () => {
         width="75%"
         flexWrap="wrap"
         rowspacing={2}
+        maxWidth={1270} m="auto"
       >
         {SPONSORS.map(({ name, wordmark }, idx) => (
           <img
