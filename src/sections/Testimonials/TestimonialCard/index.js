@@ -12,7 +12,7 @@ export const TestimonialCard = ({
     <Stack
       spacing={3}
       height={420}
-      width={b1 ? "calc(90vw)" : "360px"}
+      width={b1 ? "calc(90vw)" : "92%"}
       justifyContent="center"
       sx={{
         scrollSnapAlign: "start",

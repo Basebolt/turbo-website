@@ -19,7 +19,7 @@ export const ProductFeatures = ({ productFeatures, setCurrFeature, b2 }) => {
                 width="100%"
               >
                 <Stack
-                  width={b2 ? "90%" : "380px"}
+                  width={b2 ? "100%" : "380px"}
                   m={b2 ? "auto" : ""}
                   spacing={1}
                   ref={ref}

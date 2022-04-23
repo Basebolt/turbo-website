@@ -6,8 +6,13 @@ import { ScrollControls } from "./ScrollControl";
 export const Testimonials = () => {
   const b1 = useMediaQuery("(max-width:600px)");
   const ref = useRef(null);
-  const scroll = (scrollOffset) => {
-    ref.current.scrollLeft += scrollOffset;
+
+  const back = () => {
+    ref.current.goBack();
+  };
+
+  const next = () => {
+    ref.current.goNext();
   };
   return (
     <Stack
@@ -31,7 +36,7 @@ export const Testimonials = () => {
               See what teachers, students and other professionals have to say
             </Typography>
           </div>
-          {!b1 && <ScrollControls scroll={scroll} />}
+          {!b1 && <ScrollControls next={next} back={back} />}
         </Stack>
         <CardView ref={ref} b1={b1} />
       </Stack>

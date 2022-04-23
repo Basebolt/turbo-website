@@ -10,7 +10,7 @@ export const Footer = ({ currDownloadLink, withDLSection }) => {
     <Stack
       alignItems="center"
       justifyContent="center"
-      sx={{ background: "#fff" }}
+      sx={{ background: "#fff",  }}
     >
       <Stack width={b2 ? "90%" : "75%"} m="auto" pt={12} pb={8} spacing={8}>
         {withDLSection && (

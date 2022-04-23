@@ -11,6 +11,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { theme } from "./theme";
 import { ContactUs } from "./pages/contact-us";
+import { Product } from "./pages/product";
+import 'react-slideshow-image/dist/styles.css'
 
 export default function App() {
   React.useEffect(() => {
@@ -30,6 +32,7 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="contact-us" element={<ContactUs />} />
+            <Route path="product" element={<Product />} />
           </Route>
         </Routes>
       </BrowserRouter>
