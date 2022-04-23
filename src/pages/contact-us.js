@@ -20,6 +20,7 @@ export const ContactUs = () => {
         justifyContent="center"
         alignItems="center"
         direction="row"
+        maxWidth={1270}
       >
         <Grid item lg={5} width="100%">
           <Stack spacing={1}>
@@ -75,20 +76,7 @@ export const ContactUs = () => {
               >
                 Get in touch
               </Typography>
-              <Stack direction="row" spacing={2}>
-                <TextField
-                  sx={{ width: "100%" }}
-                  label="First Name"
-                  name="first-name"
-                  variant="outlined"
-                />
-                <TextField
-                  sx={{ width: "100%" }}
-                  label="Last Name"
-                  name="last-name"
-                  variant="outlined"
-                />
-              </Stack>
+
               <TextField
                 sx={{ width: "100%" }}
                 label="Email"
