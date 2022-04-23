@@ -18,7 +18,8 @@ export const FAQ = () => {
     <Stack
       justifyContent="center"
       alignItems="center"
-      py={8}
+      pt={12}
+      pb={8}
       sx={{
         background: "#fff",
         width: "100%",
