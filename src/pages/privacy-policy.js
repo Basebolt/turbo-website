@@ -11,7 +11,7 @@ export const PrivacyPolicy = () => {
       <Stack width={b1 ? "90%" : "75%"} m="auto" my={6}>
         <Stack spacing={4}>
           <Stack spacing={2} width={b1 ? "100%" : "75%"}>
-            <div data-aos="fade-up" data-aos-delay="400">
+            <div data-aos="fade-up" data-aos-delay="200">
               <Typography
                 variant="p"
                 color="primary.main"
@@ -20,12 +20,12 @@ export const PrivacyPolicy = () => {
                 Privacy policy
               </Typography>
             </div>
-            <div data-aos="fade-up" data-aos-delay="600">
+            <div data-aos="fade-up" data-aos-delay="400">
               <Typography variant={b1 ? "h4" : "h3"} sx={{ fontWeight: 500 }}>
                 Built with your privacy in mind.
               </Typography>
             </div>
-            <div data-aos="fade-up" data-aos-delay="800">
+            <div data-aos="fade-up" data-aos-delay="600">
               <Typography variant="body1" color="grey.main">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
@@ -43,34 +43,43 @@ export const PrivacyPolicy = () => {
               </Typography>
             </div>
           </Stack>
-          
-          <Stack>
-            <Typography
-              variant="h6"
-              color="black.main"
-              sx={{ fontWeight: 600, textTransform: "uppercase", textDecoration: "underline",  }}
+          <div data-aos="zoom-in" data-aos-delay="800">
+            <Stack
+              spacing={4}
+              p={4}
+              borderRadius={4}
+              bgcolor="black.main"
+              sx={{ color: "white.main" }}
+              id="rules"
             >
-              Note:
-            </Typography>
-            <Typography variant="body1" color="grey.main" >
-              Any of your data collected by the extension is stored locally on your
-              computer and is never sent outside. We respect your privacy
-            </Typography>
-          </Stack>
-          {PRIVACY_POLICY.map(({ title, desc }, idx) => (
-            <Stack key={idx}>
-              <Typography
-                variant="h6"
-                color="black.main"
-                sx={{ fontWeight: 600 }}
-              >
-                {title}
-              </Typography>
-              <Typography variant="body1" color="grey.main">
-                {desc}
-              </Typography>
+              <Stack spacing={1}>
+                <Typography
+                  variant="h6"
+                  color="white.main"
+                  sx={{
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    textDecoration: "underline",
+                  }}
+                >
+                  Note:
+                </Typography>
+                <Typography variant="body1" color="grey.main">
+                  Any of your data collected by the extension is stored locally
+                  on your computer and is never sent outside. We respect your
+                  privacy
+                </Typography>
+              </Stack>
+              {PRIVACY_POLICY.map(({ title, desc }, idx) => (
+                <Stack spacing={1} key={idx}>
+                  <Typography variant="p">{title}</Typography>
+                  <Typography variant="p" color="grey.main">
+                    {desc}
+                  </Typography>
+                </Stack>
+              ))}
             </Stack>
-          ))}
+          </div>
         </Stack>
       </Stack>
       <DLSection />

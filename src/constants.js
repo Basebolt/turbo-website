@@ -55,7 +55,7 @@ export const PRIVACY_POLICY = [
   },
   {
     title: "Drive uploads",
-    desc: `‍The user voluntarily gives us permission to store text/xlxs files containing your meeting chats/attendance in the root directory of your Google Drive™ account.
+    desc: `‍The user voluntarily gives us permission to store .txt/.xlxs files containing your meeting chats/attendance in the root directory of your Google Drive™ account.
     ‍`,
   },
   {
