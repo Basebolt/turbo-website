@@ -5,6 +5,7 @@ import { ScrollControls } from "./ScrollControl";
 
 export const Testimonials = () => {
   const b1 = useMediaQuery("(max-width:600px)");
+  const b2 = useMediaQuery("(max-width:800px)");
   const ref = useRef(null);
 
   const back = () => {
@@ -36,7 +37,7 @@ export const Testimonials = () => {
               See what teachers, students and other professionals have to say
             </Typography>
           </div>
-          {!b1 && <ScrollControls next={next} back={back} />}
+          {!b2 && <ScrollControls next={next} back={back} />}
         </Stack>
         <CardView ref={ref} b1={b1} />
       </Stack>
