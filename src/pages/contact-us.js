@@ -52,7 +52,8 @@ export const ContactUs = () => {
           </Stack>
         </Grid>
         <Grid item lg={7} width="100%">
-          <form name="contact" method="POST" netlify>
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <Stack
               p={6}
               spacing={4}
@@ -76,13 +77,29 @@ export const ContactUs = () => {
               >
                 Get in touch
               </Typography>
-
+              <Stack direction="row" spacing={2}>
+                <TextField
+                  sx={{ width: "100%" }}
+                  label="First Name"
+                  name="first-name"
+                  variant="outlined"
+                  required
+                />
+                <TextField
+                  sx={{ width: "100%" }}
+                  label="Last Name"
+                  name="last-name"
+                  variant="outlined"
+                  required
+                />
+              </Stack>
               <TextField
                 sx={{ width: "100%" }}
                 label="Email"
                 name="email"
                 type="email"
                 variant="outlined"
+                required
               />
               <TextField
                 sx={{ width: "100%" }}
@@ -91,6 +108,7 @@ export const ContactUs = () => {
                 rows={4}
                 variant="outlined"
                 multiline
+                required
               />
               <Button
                 type="submit"
