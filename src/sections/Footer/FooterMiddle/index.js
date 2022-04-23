@@ -15,8 +15,8 @@ export const FooterMiddle = ({ b2 }) => {
             >
               {category}
             </Typography>
-            {FOOTER_LINKS[category].map((elem, idx) => {
-              return elem === "Roadmap" ? (
+            {FOOTER_LINKS[category].map(({ item, path, url }, idx) => {
+              return item === "Roadmap" ? (
                 <Tooltip
                   key={idx}
                   title="10+ new features"
@@ -24,10 +24,14 @@ export const FooterMiddle = ({ b2 }) => {
                   placement="right"
                   arrow
                 >
-                  <FooterLink>{elem}</FooterLink>
+                  <FooterLink url={url} path={path}>
+                    {item}
+                  </FooterLink>
                 </Tooltip>
               ) : (
-                <FooterLink key={idx}>{elem}</FooterLink>
+                <FooterLink key={idx} url={url} path={path}>
+                  {item}
+                </FooterLink>
               );
             })}
           </Stack>

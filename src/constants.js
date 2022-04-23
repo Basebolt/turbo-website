@@ -457,10 +457,27 @@ export const NAVBAR_LINKS = [
 ];
 
 export const FOOTER_LINKS = {
-  product: ["What is Turbo?", "Why use Turbo?", "Turbo Premium", "Roadmap"],
-  resources: ["Tutorials", "Github", "Privacy Policy"],
-  help: ["Github Issues", "Google Form", "FAQ"],
-  community: ["Discord", "Github", "Instagram"],
+  product: [
+    { item: "What is Turbo?", path: "/product/" },
+    { item: "Why use Turbo?", path: "/product/" },
+    { item: "Turbo Premium", path: "/product/" },
+    { item: "Roadmap", path: "/product/" },
+  ],
+  resources: [
+    { item: "Tutorials", url: "https://youtube.com/" },
+    { item: "Github", url: "https://github.com/" },
+    { item: "Privacy Policy", path: "/" },
+  ],
+  help: [
+    { item: "Github Issues", url: "https://github.com/" },
+    { item: "Google Form", url: "https://forms.gle/wx8bTNh2W4p2Hevs9" },
+    { item: "FAQ", path: "/product/" },
+  ],
+  community: [
+    { item: "Discord", url: "https://discord.com/" },
+    { item: "Github", url: "https://github.com/" },
+    { item: "Instagram", url: "https://instagram.com/" },
+  ],
 };
 
 export const FAQ_ITEMS = [
