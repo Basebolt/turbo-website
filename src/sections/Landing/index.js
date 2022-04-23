@@ -10,15 +10,14 @@ export const Landing = ({ currDownloadLink, ExtensionAvailability }) => {
   const b2 = useMediaQuery("(max-width:964px)");
   const b3 = useMediaQuery("(max-width:600px)");
   return (
-    <Box
-      sx={{  position: "relative" }}
-    >
+    <Box sx={{ position: "relative" }}>
       <Grid
         container
         justifyContent="center"
         alignItems="center"
-        maxWidth={1270} m="auto"
-        py={5}
+        maxWidth={1270}
+        m="auto"
+        py={b2 ? 10 : 5}
         sx={{
           width: `${b1 ? "90%" : "75%"}`,
           height: "100%",
