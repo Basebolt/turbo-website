@@ -6,6 +6,8 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { Button } from "../components/Button";
+import { DLSection } from "../sections/DLSection";
+import { Footer } from "../sections/Footer";
 
 export const ContactUs = () => {
   const b1 = useMediaQuery("(max-width:600px)");
@@ -129,6 +131,8 @@ export const ContactUs = () => {
           </div>
         </Grid>
       </Grid>
+      <DLSection />
+      <Footer />
     </>
   );
 };
