@@ -1,4 +1,5 @@
 import { Stack, Typography, useMediaQuery } from "@mui/material";
+import { Box } from "@mui/system";
 import { PRODUCT } from "../constants";
 import { DLSection } from "../sections/DLSection";
 import { Footer } from "../sections/Footer";
@@ -17,10 +18,14 @@ export const Product = () => {
           >
             Product
           </Typography>
-          <Stack spacing={4}>
+          <Stack gap={4}>
             {PRODUCT.map(({ title, desc }, idx) => (
-              <Stack key={idx}  spacing={2}>
-                <a href={`#${title.toLowerCase().replaceAll(" ", "-")}`}>
+              <Box
+                mt={-12}
+                pt={12}
+                id={title.toLowerCase().replaceAll(" ", "-")}
+              >
+                <Stack key={idx} spacing={2}>
                   <Typography
                     variant="h4"
                     color="black.main"
@@ -28,11 +33,11 @@ export const Product = () => {
                   >
                     {title}
                   </Typography>
-                </a>
-                <Typography variant="body1" color="grey.main">
-                  {desc}
-                </Typography>
-              </Stack>
+                  <Typography variant="body1" color="grey.main">
+                    {desc}
+                  </Typography>
+                </Stack>
+              </Box>
             ))}
           </Stack>
         </Stack>

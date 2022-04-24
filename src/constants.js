@@ -458,10 +458,10 @@ export const NAVBAR_LINKS = [
 
 export const FOOTER_LINKS = {
   product: [
-    { item: "What is Turbo?", path: "/product/#" },
-    { item: "Why use Turbo?", path: "/product/#" },
-    { item: "Turbo Premium", path: "/product/#" },
-    { item: "Roadmap", path: "/product/#" },
+    { item: "What is Turbo?", path: "/product#" },
+    { item: "Why use Turbo?", path: "/product#" },
+    { item: "Turbo Premium", path: "/product#" },
+    { item: "Roadmap", path: "/product#" },
   ],
   resources: [
     { item: "Tutorials", url: "https://youtube.com/" },
